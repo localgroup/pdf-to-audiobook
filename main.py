@@ -37,9 +37,6 @@ def open_pdf():
     file_path = filedialog.askopenfilename(filetypes=[("PDF files", "*.pdf")])
     if file_path:
         file_path_load.append(file_path)
-        # v1 = pdf.RenderPdf()
-        # v2 = v1.view_pdf(root, pdf_location=file_path)
-        # v2.grid(row=0, column=0, sticky="nsew")
     else:
         messagebox.showinfo("Info", "No PDF file selected.")
 
